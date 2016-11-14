@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WinLoaf.WorkClass;
+//using WinLoaf.WorkClass;
 
 namespace _04_picturebox
 {
@@ -48,8 +48,8 @@ namespace _04_picturebox
                         img = Image.FromFile(((Array)e.Data.GetData(DataFormats.FileDrop)).GetValue(0).ToString());
                         Clipboard.SetImage(img);
                         pictureBox.Image = img;
-                        ResizeImage d=new ResizeImage();
-                        ResizeImage.FixedSize()
+                        //ResizeImage d=new ResizeImage();
+                        //ResizeImage.FixedSize(img, img.Height, true);
 
 
 
